@@ -19,13 +19,13 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"nijigaku.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="邦邦特化AI聊天(2代live2d)本分支为适应本地快速部署的轻量化版本，可从main分支或者其它分支查看中小型网页部署版或开发版  1234#本机部署git clone https:&#x2F;&#x2F;github.com&#x2F;Paraworks&#x2F;BangDreamAipip install -r requirements.txtpython app.py 默认5000端口 配置live2d模型BangDream的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AI vtuber 探索">
-<meta property="og:url" content="https://nijigaku.top/2024/09/15/gamescript-3/index.html">
+<meta property="og:url" content="http://example.com/2024/09/15/gamescript-3/index.html">
 <meta property="og:site_name" content="Paraworks">
 <meta property="og:description" content="邦邦特化AI聊天(2代live2d)本分支为适应本地快速部署的轻量化版本，可从main分支或者其它分支查看中小型网页部署版或开发版  1234#本机部署git clone https:&#x2F;&#x2F;github.com&#x2F;Paraworks&#x2F;BangDreamAipip install -r requirements.txtpython app.py 默认5000端口 配置live2d模型BangDream的">
 <meta property="og:locale">
@@ -38,7 +38,7 @@
 <meta property="article:tag" content="TTS">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://nijigaku.top/2024/09/15/gamescript-3/">
+<link rel="canonical" href="http://example.com/2024/09/15/gamescript-3/">
 
 
 <script id="page-configurations">
@@ -195,7 +195,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://nijigaku.top/2024/09/15/gamescript-3/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/15/gamescript-3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/H3f_vRj7_400x400.jpg">
@@ -265,7 +265,7 @@
 <p>这样程序可以自动识别乐队和角色,否则无法在前端选择</p>
 <h2 id="模型配置"><a href="#模型配置" class="headerlink" title="模型配置"></a>模型配置</h2><p>如果没什么大问题，可以直接在前端页面配置，但也可以本地直接修改config.json</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">默认配置</span><br><span class="line">&#123;</span><br><span class="line">    &quot;api&quot;: &quot;chatgpt&quot;,</span><br><span class="line">    &quot;apiKey&quot;: &quot;&quot;,</span><br><span class="line">    &quot;apiLink&quot;: &quot;&quot;,</span><br><span class="line">    &quot;band&quot;: &quot;Afterglow&quot;,</span><br><span class="line">    &quot;duration&quot;: 2,</span><br><span class="line">    &quot;frequence&quot;: 0.5,</span><br><span class="line">    &quot;modelPath&quot;: &quot;static/Resources/Afterglow/蘭/live/model.json&quot;,</span><br><span class="line">    &quot;mouseTrack&quot;: 1,</span><br><span class="line">    &quot;positionX&quot;: 300,</span><br><span class="line">    &quot;positionY&quot;: 50,</span><br><span class="line">    &quot;scale&quot;: 0.3,</span><br><span class="line">    &quot;speaker&quot;: &quot;蘭&quot;,</span><br><span class="line">    &quot;stopBreath&quot;: 0,</span><br><span class="line">    &quot;text&quot;: &#123;</span><br><span class="line">        &quot;response&quot;: &quot;初始化成功&quot;,</span><br><span class="line">        &quot;expression&quot;: null,</span><br><span class="line">        &quot;motion&quot;: null</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;textApiBaseUrl&quot;: &quot;http://127.0.0.1:5000/api/sentence/test&quot;,</span><br><span class="line">    &quot;ttsApiBaseUrl&quot;: &quot;http://127.0.0.1:8000/?is_chat=false&quot;,</span><br><span class="line">    &quot;volum&quot;: 70</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="启动TTS合成"><a href="#启动TTS合成" class="headerlink" title="启动TTS合成"></a>启动TTS合成</h2><p><a href="https://nijigaku.top/2023/10/03/BangDreamTTS/">TTS(Bang dream Bert vits示例)</a>:</p>
+<h2 id="启动TTS合成"><a href="#启动TTS合成" class="headerlink" title="启动TTS合成"></a>启动TTS合成</h2><p><a target="_blank" rel="noopener" href="https://nijigaku.top/2023/10/03/BangDreamTTS/">TTS(Bang dream Bert vits示例)</a>:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git clone https://huggingface.co/spaces/Mahiruoshi/MyGO_VIts-bert</span><br><span class="line">cd MyGO_VIts-bert</span><br><span class="line">pip install -r requirements.txt</span><br><span class="line">pip install Flask</span><br><span class="line">pip install Flask-CORS</span><br><span class="line">python server.py</span><br></pre></td></tr></table></figure>
 <h2 id="自定义chatbot"><a href="#自定义chatbot" class="headerlink" title="自定义chatbot"></a>自定义chatbot</h2><p>由于在前端配置完apikey后，直接跑chatgpt也大概率跑不通,建议自行修改<a target="_blank" rel="noopener" href="https://github.com/Paraworks/BangDreamAi/tree/light/chat.py">chat.py</a>的相关配置以及逻辑</p>
 <h2 id="To-do-list"><a href="#To-do-list" class="headerlink" title="To do list"></a>To do list</h2><p>自定义直播间管人配置(未完成)</p>
