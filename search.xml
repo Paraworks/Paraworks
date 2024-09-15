@@ -166,7 +166,7 @@
   </entry>
   <entry>
     <title>Design</title>
-    <url>/2024/09/15/Design/</url>
+    <url>/2023/09/15/Design/</url>
     <content><![CDATA[<h1 id="The-Situationist-International-Movement-and-Its-Artistic-Practices"><a href="#The-Situationist-International-Movement-and-Its-Artistic-Practices" class="headerlink" title="The Situationist International Movement and Its Artistic Practices"></a>The Situationist International Movement and Its Artistic Practices</h1><p>Introduction<br>The Situationist International (SI) emerged as a radical collective of avant-garde artists, intellectuals, and political theorists in the late 1950s. This movement sought to challenge and transcend contemporary art and politics’ limitations by advocating for a fusion of art and life. This was aimed at combating the passive consumption of the “spectacle”—a term used by the SI to describe the media and consumer culture that alienates individuals from genuine social interactions.<br>Situationist International foundadation in 1957<br>Situationist International foundadation in 1957</p>
 <p>Origins and Philosophy<br>The Situationist International (SI) emerged in the late 1950s as a radical collective, deeply embedded in the tumultuous European political landscape. It was more than a mere artistic or political movement; it represented a profound critique and reimagining of contemporary life under capitalism. The SI drew on a rich tapestry of avant-garde traditions, notably Dadaism and Surrealism, but aimed to transcend these by integrating art into everyday life more fundamentally and seeking to transform society itself.</p>
 <p>Central to the SI’s philosophical foundation was the concept of “psychogeography,” which examined the emotional and behavioral impacts of geographical environments on individuals. This exploration was conducted through the practice of the “dérive,” an aimless drift through urban landscapes intended to map the psychogeographical contours of the city and uncover the influence of the urban environment on the psyche.</p>
@@ -314,7 +314,7 @@
   </entry>
   <entry>
     <title>Neural Network and Deep learning</title>
-    <url>/2024/09/15/DL/</url>
+    <url>/2023/09/15/DL/</url>
     <content><![CDATA[<p>SC4001</p>
 ]]></content>
       <categories>
@@ -328,7 +328,7 @@
   </entry>
   <entry>
     <title>Data Analytics and Mining</title>
-    <url>/2024/09/15/DM/</url>
+    <url>/2023/09/15/DM/</url>
     <content><![CDATA[<p>SC4020</p>
 ]]></content>
       <categories>
@@ -342,7 +342,7 @@
   </entry>
   <entry>
     <title>Data Visualization</title>
-    <url>/2024/09/15/DV/</url>
+    <url>/2023/09/15/DV/</url>
     <content><![CDATA[<p>SC4024</p>
 ]]></content>
       <categories>
@@ -355,7 +355,7 @@
   </entry>
   <entry>
     <title>Machine Learning</title>
-    <url>/2024/09/15/ML/</url>
+    <url>/2023/09/15/ML/</url>
     <content><![CDATA[<p>SC4000</p>
 ]]></content>
       <categories>
@@ -369,7 +369,7 @@
   </entry>
   <entry>
     <title>Nature Language Processing</title>
-    <url>/2024/09/15/NLP/</url>
+    <url>/2023/09/15/NLP/</url>
     <content><![CDATA[<p>SC4002</p>
 ]]></content>
       <categories>
@@ -379,6 +379,15 @@
         <tag>Toturial</tag>
         <tag>Deep learning</tag>
         <tag>Nature Language Processing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dataset sharing</title>
+    <url>/2024/09/15/dataset/</url>
+    <content><![CDATA[<p>Bangdream Game scripts <a href="https://huggingface.co/datasets/Mahiruoshi/Bangdori">Dataset</a> is extracted from <a href="https://bestdori.com/">Bestdori</a>. It have emotional labels for ZH, JP, EN, KR and TW corpus.<br>You can obtain wav files for each characters from the voice <a href="https://huggingface.co/spaces/Mahiruoshi/BangDream-Bert-VITS2/tree/main/%E7%88%AC%E8%99%AB">datas</a> extracted from Game.</p>
+]]></content>
+      <tags>
+        <tag>Dataset</tag>
       </tags>
   </entry>
 </search>
