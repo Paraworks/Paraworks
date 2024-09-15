@@ -276,4 +276,31 @@
         <tag>Art and Design</tag>
       </tags>
   </entry>
+  <entry>
+    <title>NN</title>
+    <url>/2024/09/15/NN/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>diffusion-models</title>
+    <url>/2024/09/15/diffusion-models/</url>
+    <content><![CDATA[<h1 id="扩散模型-Diffusion-Model-详解：直观理解、数学原理、PyTorch-实现"><a href="#扩散模型-Diffusion-Model-详解：直观理解、数学原理、PyTorch-实现" class="headerlink" title="扩散模型(Diffusion Model)详解：直观理解、数学原理、PyTorch 实现"></a><a href="https://zhouyifan.net/2023/07/07/20230330-diffusion-model/">扩散模型(Diffusion Model)详解：直观理解、数学原理、PyTorch 实现</a></h1><p>.</p>
+<h1 id="DDIM-简明讲解与-PyTorch-实现：加速扩散模型采样的通用方法"><a href="#DDIM-简明讲解与-PyTorch-实现：加速扩散模型采样的通用方法" class="headerlink" title="DDIM 简明讲解与 PyTorch 实现：加速扩散模型采样的通用方法"></a><a href="https://zhouyifan.net/2023/07/07/20230702-DDIM/">DDIM 简明讲解与 PyTorch 实现：加速扩散模型采样的通用方法</a></h1><p>.</p>
+<h1 id="Stable-Diffusion-解读（一）：回顾早期工作"><a href="#Stable-Diffusion-解读（一）：回顾早期工作" class="headerlink" title="Stable Diffusion 解读（一）：回顾早期工作"></a><a href="https://zhouyifan.net/2024/01/23/20230707-SD1/">Stable Diffusion 解读（一）：回顾早期工作</a></h1><p>.</p>
+<h1 id="Stable-Diffusion-解读（二）：论文精读"><a href="#Stable-Diffusion-解读（二）：论文精读" class="headerlink" title="Stable Diffusion 解读（二）：论文精读"></a><a href="https://zhouyifan.net/2024/01/23/20230709-SD2/">Stable Diffusion 解读（二）：论文精读</a></h1><p>.</p>
+<h1 id="Stable-Diffusion-解读（三）：原版实现及Diffusers实现源码解读"><a href="#Stable-Diffusion-解读（三）：原版实现及Diffusers实现源码解读" class="headerlink" title="Stable Diffusion 解读（三）：原版实现及Diffusers实现源码解读"></a><a href="https://zhouyifan.net/2024/01/23/20230713-SD3/">Stable Diffusion 解读（三）：原版实现及Diffusers实现源码解读</a></h1><p>.</p>
+<h1 id="LoRA-在-Stable-Diffusion-中的三种应用：原理讲解与代码示例"><a href="#LoRA-在-Stable-Diffusion-中的三种应用：原理讲解与代码示例" class="headerlink" title="LoRA 在 Stable Diffusion 中的三种应用：原理讲解与代码示例"></a><a href="https://zhouyifan.net/2024/01/23/20240114-SD-LoRA/">LoRA 在 Stable Diffusion 中的三种应用：原理讲解与代码示例</a></h1><p>.</p>
+<h1 id="Stable-Diffusion-中的自注意力替换技术与-Diffusers-实现"><a href="#Stable-Diffusion-中的自注意力替换技术与-Diffusers-实现" class="headerlink" title="Stable Diffusion 中的自注意力替换技术与 Diffusers 实现"></a><a href="https://zhouyifan.net/2024/01/27/20240123-SD-Attn/">Stable Diffusion 中的自注意力替换技术与 Diffusers 实现</a></h1><p>.</p>
+<h1 id="Stable-Diffusion-3-论文及源码概览"><a href="#Stable-Diffusion-3-论文及源码概览" class="headerlink" title="Stable Diffusion 3 论文及源码概览"></a><a href="https://zhouyifan.net/2024/07/14/20240703-SD3/">Stable Diffusion 3 论文及源码概览</a></h1><p>.</p>
+<h1 id="定制适合自己的-Diffusers-扩散模型训练脚本"><a href="#定制适合自己的-Diffusers-扩散模型训练脚本" class="headerlink" title="定制适合自己的 Diffusers 扩散模型训练脚本"></a><a href="https://zhouyifan.net/2024/07/27/20240605-diffusers-training/">定制适合自己的 Diffusers 扩散模型训练脚本</a></h1><p>.</p>
+]]></content>
+      <categories>
+        <category>Reference</category>
+      </categories>
+      <tags>
+        <tag>Computer vision</tag>
+        <tag>Diffusion-model</tag>
+        <tag>Toturial</tag>
+      </tags>
+  </entry>
 </search>
