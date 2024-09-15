@@ -29,15 +29,15 @@
 <meta property="og:site_name" content="mahiruoshi">
 <meta property="og:description" content="2023&#x2F;2&#x2F;10更新 vits-onnx 一键式启动2023&#x2F;2&#x2F;17更新 弃用renpy 采用桌宠版本live2d启动器：克隆Live2DMascot仓库后，修改config.json文件1234567891011&quot;ChatAPI&quot; : &#123;	&quot;ChatSavePath&quot; : &quot;chat&amp;quot">
 <meta property="og:locale">
-<meta property="og:image" content="https://github.com/Paraworks/vits_with_chatgpt-gpt3/blob/main/T9B%25SY%7B%7BGY5I%600K5P7A4AUC.png">
+<meta property="og:image" content="http://example.com/images/zhuxu.png">
 <meta property="article:published_time" content="2024-09-15T08:31:04.000Z">
-<meta property="article:modified_time" content="2024-09-15T09:47:02.130Z">
+<meta property="article:modified_time" content="2024-09-15T10:43:19.798Z">
 <meta property="article:author" content="Zhang Jiahua">
 <meta property="article:tag" content="original">
 <meta property="article:tag" content="中文">
 <meta property="article:tag" content="网站">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/Paraworks/vits_with_chatgpt-gpt3/blob/main/T9B%25SY%7B%7BGY5I%600K5P7A4AUC.png">
+<meta name="twitter:image" content="http://example.com/images/zhuxu.png">
 
 <link rel="canonical" href="http://example.com/2024/09/15/AI-vtuber/">
 
@@ -220,7 +220,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2024-09-15 16:31:04 / Modified: 17:47:02" itemprop="dateCreated datePublished" datetime="2024-09-15T16:31:04+08:00">2024-09-15</time>
+              <time title="Created: 2024-09-15 16:31:04 / Modified: 18:43:19" itemprop="dateCreated datePublished" datetime="2024-09-15T16:31:04+08:00">2024-09-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -263,7 +263,7 @@
 <h1 id="选择2：绿皮思路chat"><a href="#选择2：绿皮思路chat" class="headerlink" title="选择2：绿皮思路chat"></a>选择2：<a target="_blank" rel="noopener" href="https://github.com/Paraworks/vits_with_chatgpt-gpt3/blob/main/inference_ork.py">绿皮思路chat</a></h1><p>支持从外部启动任何正在运行的live2d模型，比如说修改点击事件的对应音频来实现。只需在你的vits项目中加入inference_ork.py这个小文件，然后启动它。注意，需要你能够在自己的windows上部署vits项目，推荐安装好cuda，<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV13t4y1V7DV/?spm_id_from=333.337.search-card.all.click&vd_source=7e8cf9f5c840ec4789ccb5657b2f0512">教程
 </a></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Nijigasaki COC跑团版</span><br><span class="line">git clone https://huggingface.co/spaces/Mahiruoshi/Lovelive_Nijigasaki_VITS</span><br><span class="line">cd Lovelive_Nijigasaki_VITS</span><br><span class="line">pip install -r requirements.txt</span><br><span class="line">python inference_ork.py</span><br></pre></td></tr></table></figure>
-<p>许多live2d都有触碰事件，那么，只需要有一个装载有完整cubism for native功能的live2d播放器,其可以支持点击事件并且支持对口型功能。<br>此时只需要启动 inference_ork.py<br><img src="https://github.com/Paraworks/vits_with_chatgpt-gpt3/blob/main/T9B%25SY%7B%7BGY5I%600K5P7A4AUC.png" alt="Image text"></p>
+<p>许多live2d都有触碰事件，那么，只需要有一个装载有完整cubism for native功能的live2d播放器,其可以支持点击事件并且支持对口型功能。<br>此时只需要启动 inference_ork.py<br><img src="/images/zhuxu.png" alt="Image text"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">#在程序中将audio参数修改为触碰动作的音频路径</span><br><span class="line">#比如</span><br><span class="line">parser.add_argument(&#x27;--audio&#x27;,</span><br><span class="line">                    type=str,</span><br><span class="line">                    help=&#x27;中途生成的语音存储路径&#x27;,</span><br><span class="line">                    default = &#x27;110Yuki-Setsuna/sounds/temp.wav&#x27;)</span><br><span class="line">#其在live2d的model3.json文件中对应的是</span><br><span class="line">&quot;TapBody&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">          &quot;File&quot;: &quot;motions/a.motion3.json&quot;,</span><br><span class="line">          &quot;Sound&quot;: &quot;sounds/temp.wav&quot;,</span><br><span class="line">          &quot;Text&quot;: &quot;ﾋﾄﾘﾀﾞｹﾅﾝﾃｴﾗﾍﾞﾅｲﾖｰ&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          &quot;File&quot;: &quot;motions/a.motion3.json&quot;,</span><br><span class="line">          &quot;Sound&quot;: &quot;sounds/temp2.wav&quot;,</span><br><span class="line">          &quot;Text&quot;: &quot;ﾋﾄﾘﾀﾞｹﾅﾝﾃｴﾗﾍﾞﾅｲﾖｰ&quot;</span><br><span class="line">        &#125;，</span><br><span class="line">	&#123;</span><br><span class="line">          &quot;File&quot;: &quot;motions/a.motion3.json&quot;,</span><br><span class="line">          &quot;Sound&quot;: &quot;sounds/temp3.wav&quot;,</span><br><span class="line">          &quot;Text&quot;: &quot;ﾋﾄﾘﾀﾞｹﾅﾝﾃｴﾗﾍﾞﾅｲﾖｰ&quot;</span><br><span class="line">        &#125;</span><br><span class="line">	......]</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
 <p>这样做的本质是让这个绿皮程序不断修改音频文件</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#绿皮启动器的核心</span><br><span class="line">cmd = &#x27;ffmpeg -y -i &#x27; +  args.outdir + &#x27;/temp1.wav&#x27; + &#x27; -ar 44100 &#x27;+ args.audio</span><br><span class="line">#主程序就长这样</span><br><span class="line">def main():</span><br><span class="line">    while True:</span><br><span class="line">      text = input(&quot;You:&quot;)</span><br><span class="line">      text = infer(text)</span><br><span class="line">      print(&#x27;Waifu:&#x27;+text.replace(&quot;[ZH]&quot;,&quot;&quot;).replace(&quot;[JA]&quot;,&quot;&quot;))</span><br><span class="line">    </span><br><span class="line">if __name__ == &#x27;__main__&#x27;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
